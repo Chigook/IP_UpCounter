@@ -1,0 +1,115 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x870C2CF5F33F27CB",
+      "device": "xc7a35tcpg236-1",
+      "name": "upcounter_design",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2020.1",
+      "validated": "true"
+    },
+    "design_tree": {
+      "FNDController_0": ""
+    },
+    "ports": {
+      "o_fndSelect": {
+        "direction": "O",
+        "left": "3",
+        "right": "0"
+      },
+      "i_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "i_reset",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "upcounter_design_i_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_reset": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
+      },
+      "i_value": {
+        "direction": "I",
+        "left": "13",
+        "right": "0"
+      },
+      "o_fndFont": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      }
+    },
+    "components": {
+      "FNDController_0": {
+        "vlnv": "xilinx.com:user:FNDController:1.0",
+        "xci_name": "upcounter_design_FNDController_0_0"
+      }
+    },
+    "nets": {
+      "FNDController_o_fndSelect": {
+        "ports": [
+          "FNDController_0/o_fndSelect",
+          "o_fndSelect"
+        ]
+      },
+      "i_clk_0_1": {
+        "ports": [
+          "i_clk",
+          "FNDController_0/i_clk"
+        ]
+      },
+      "i_reset_0_1": {
+        "ports": [
+          "i_reset",
+          "FNDController_0/i_reset"
+        ]
+      },
+      "i_value_0_1": {
+        "ports": [
+          "i_value",
+          "FNDController_0/i_value"
+        ]
+      },
+      "FNDController_0_o_fndFont": {
+        "ports": [
+          "FNDController_0/o_fndFont",
+          "o_fndFont"
+        ]
+      }
+    }
+  }
+}
